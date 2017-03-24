@@ -1,0 +1,5 @@
+speed = input("Enter str: ")
+
+if speed == "Hi":
+    print("Hello")
+print ("Bye")
