@@ -1,0 +1,11 @@
+import requests
+
+url = "http://pulse-rest-testing.herokuapp.com/"
+
+def creat_book(t, a):
+    q = requests.post(url + "books/", data={"title": t, "author": a})
+    return q.json()
+
+if __name__ == "__main__":
+    # print(creat_book("QA", "Oksana"))
+    creat_book("SQL", "Oksana")
